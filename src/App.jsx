@@ -44,7 +44,7 @@ export default function App() {
   return (
     <>
       <NewTodoFrom onSubmit={addTodo} />
-      <h1>TO-DO-LIST</h1>
+      <h1 class="text-3xl font-bold underline">TO-DO-LIST</h1>
       <TodoList
         todos={todos}
         toggleTodo={toggleTodo}
