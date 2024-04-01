@@ -42,14 +42,16 @@ export default function App() {
     });
   }
   return (
-    <>
-      <NewTodoFrom onSubmit={addTodo} />
-      <h1 class="text-3xl font-bold underline">TO-DO-LIST</h1>
-      <TodoList
-        todos={todos}
-        toggleTodo={toggleTodo}
-        deleteTodos={deleteTodos}
-      />
-    </>
+    <div class="h-screen flex items-center justify-center">
+      <div class="align-middle bg-teal-800 w-96 h-3/4 rounded-t-3xl rounded-b-3xl">
+        <NewTodoFrom onSubmit={addTodo} />
+        <h1 class="text-3xl font-bold underline">TO-DO-LIST</h1>
+        <TodoList
+          todos={todos}
+          toggleTodo={toggleTodo}
+          deleteTodos={deleteTodos}
+        />
+      </div>
+    </div>
   );
 }
